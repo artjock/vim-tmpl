@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.tmpl,*.inc setf tmpl
+autocmd BufNewFile,BufRead *.tmpl,*.inc setf tmpl.html
