@@ -42,7 +42,7 @@ syn match htmltmpl_brakets contained +<\|>+
 
 " Attribute
 syn match htmltmpl_bare_attribute
-            \ +[^>='"[:blank:]]\+\(\s\|>\)\@=+
+            \ +[^[:blank:]]\+\(\s\|>\)\@=+
             \ contained skipwhite
             \ nextgroup=htmltmpl_bare_attribute
 
