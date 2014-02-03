@@ -6,7 +6,17 @@ if exists("b:current_syntax")
     finish
 endif
 
+if !exists("main_syntax")
+    let main_syntax = 'html'
+endif
+
+" Read and execute commands from
+" all[!] source files for html syntax
 runtime! syntax/html.vim
+
+" Unlet buffer variable 'current_syntax'
+" if it was let by a html source file
+unlet! b:current_syntax
 
 
 " TMPL Start Tag
@@ -75,3 +85,6 @@ hi link htmltmpl_attribute_name         Type
 hi link htmltmpl_attribute_value        Identifier
 hi link htmltmpl_bare_attribute         Identifier
 hi link htmltmpl_attribute_loop_value   Preproc
+
+
+let b:current_syntax = "tmpl"
