@@ -42,7 +42,7 @@ syn match htmltmpl_statement contained +TMPL_[a-z]\++
 
 
 " TMPL Element name Matching
-syn match htmltmpl_tagname contained +TMPL_\(IF\|INCLUDE\|ELSE\|VAR\|UNLESS\|SETVAR\|CASE\|WHEN\|OTHERWISE\|ELSIF\|COMMENT\|STATIC_URL\|TRANSLIST\|TRANS\|TEXT\|ASSIGN\|WITH\)+
+syn match htmltmpl_tagname contained +TMPL_\(IF\|INCLUDE\|INLINE\|ELSE\|VAR\|UNLESS\|SETVAR\|BLOCK\|MARKER\|CLIENT_TRANS\|PROVIDE_CLIENT_DATA\|DATE\|CASE\|WHEN\|OTHERWISE\|ELSIF\|COMMENT\|STATIC_URL\|TRANS\|TRANSLIST\|TRANS\|TEXT\|V\|FOR\|ASSIGN\|WITH\)+
 syn keyword htmltmpl_loop_tagname contained TMPL_LOOP
 
 
